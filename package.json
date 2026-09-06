@@ -1,0 +1,9 @@
+{
+  "id": "deki-uart",
+  "displayName": "UART",
+  "minEngine": "0.10.0",
+  "buildDefine": "DEKI_PACKAGE_UART",
+  "requires": [],
+  "features": [],
+  "dependencies": {}
+}
