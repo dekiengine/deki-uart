@@ -3,6 +3,9 @@
 #include "IDekiUART.h"
 #include "DekiUARTPackage.h"
 
+namespace DekiUart
+{
+
 /**
  * @brief Factory for UART instances. Each chip driver owns its own UART
  * (UARTs are point-to-point, so there's no shared-bus registry).
@@ -22,3 +25,5 @@ public:
 private:
     static Factory s_Factory;
 };
+
+}  // namespace DekiUart

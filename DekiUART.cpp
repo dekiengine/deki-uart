@@ -1,6 +1,9 @@
 #include "DekiUART.h"
 #include <deki/LogSystem.h>
 
+namespace DekiUart
+{
+
 DekiUART::Factory DekiUART::s_Factory = nullptr;
 
 void DekiUART::SetFactory(Factory factory)
@@ -23,3 +26,5 @@ bool DekiUART::HasFactory()
 {
     return s_Factory != nullptr;
 }
+
+}  // namespace DekiUart

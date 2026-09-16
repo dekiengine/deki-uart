@@ -4,6 +4,9 @@
 #include <cstdint>
 #include <cstddef>
 
+namespace DekiUart
+{
+
 class IDekiUART : public Deki::IPackage
 {
 public:
@@ -12,3 +15,5 @@ public:
     virtual int Read (uint8_t* dst, size_t maxLen, uint32_t timeoutMs) = 0;
     virtual int Write(const uint8_t* src, size_t len) = 0;
 };
+
+}  // namespace DekiUart
