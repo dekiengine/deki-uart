@@ -38,7 +38,7 @@ DEKI_UART_API int DekiUART_EnsureRegistered(void)
 #endif
 }
 
-DEKI_PLUGIN_API const char* DekiPlugin_GetName(void)    { return "DekiRendering::Deki UART Package"; }
+DEKI_PLUGIN_API const char* DekiPlugin_GetName(void)    { return "Deki UART Package"; }
 DEKI_PLUGIN_API const char* DekiPlugin_GetVersion(void)
 {
 #ifdef DEKI_PACKAGE_VERSION
