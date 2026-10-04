@@ -6,13 +6,9 @@
 namespace DekiUart
 {
 
-/**
- * @brief Factory for UART instances. Each chip driver owns its own UART
- * (UARTs are point-to-point, so there's no shared-bus registry).
- *
- * Platform integration packages call SetFactory at boot; chip drivers call
- * Create() when they need an instance.
- */
+/// Factory for UART instances. Each chip driver owns its own UART, since a UART
+/// links exactly two devices. The platform package calls SetFactory() at boot;
+/// chip drivers call Create() when they need an instance.
 class DEKI_UART_API DekiUART
 {
 public:

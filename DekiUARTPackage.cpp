@@ -1,7 +1,4 @@
-/**
- * @file DekiUARTPackage.cpp
- * @brief Package entry point for deki-uart
- */
+// Package entry point for deki-uart.
 #include "DekiUARTPackage.h"
 #include <deki/interop/Plugin.h>
 #include <deki/LogSystem.h>
