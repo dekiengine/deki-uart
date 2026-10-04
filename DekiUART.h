@@ -18,9 +18,9 @@ class DEKI_UART_API DekiUART
 public:
     using Factory = IDekiUART* (*)();
 
-    static void       SetFactory(Factory factory);
+    static void SetFactory(Factory factory);
     static IDekiUART* Create();
-    static bool       HasFactory();
+    static bool HasFactory();
 
 private:
     static Factory s_Factory;
